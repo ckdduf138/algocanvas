@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/algo/static/css/main.f450704f.css",
-    "main.js": "/algo/static/js/main.bbfefcee.js",
-    "index.html": "/algo/index.html",
-    "main.f450704f.css.map": "/algo/static/css/main.f450704f.css.map",
-    "main.bbfefcee.js.map": "/algo/static/js/main.bbfefcee.js.map"
+    "main.css": "/algocanvas/static/css/main.f450704f.css",
+    "main.js": "/algocanvas/static/js/main.b529260a.js",
+    "index.html": "/algocanvas/index.html",
+    "main.f450704f.css.map": "/algocanvas/static/css/main.f450704f.css.map",
+    "main.b529260a.js.map": "/algocanvas/static/js/main.b529260a.js.map"
   },
   "entrypoints": [
     "static/css/main.f450704f.css",
-    "static/js/main.bbfefcee.js"
+    "static/js/main.b529260a.js"
   ]
 }
