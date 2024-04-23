@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><script type="text/typescript">(function (l: Location) {
+                if (l.search) {
+                    const q: { [key: string]: string } = {};
+                    l.search.slice(1).split('&').forEach((v: string) => {
+                        const a = v.split('=');
+                        q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+                    });
+                    if (q.p !== undefined) {
+                        window.history.replaceState(null, null,
+                            l.pathname.slice(0, -1) + (q.p || '') +
+                            (q.q ? ('?' + q.q) : '') +
+                            l.hash
+                        );
+                    }
+                }
+            }(window.location));</script><script defer="defer" src="/algo/static/js/main.bbfefcee.js"></script><link href="/algo/static/css/main.f450704f.css" rel="stylesheet"></head><div id="root"></div></html>
