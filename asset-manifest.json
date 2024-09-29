@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/algocanvas/static/css/main.f450704f.css",
-    "main.js": "/algocanvas/static/js/main.ff3d893f.js",
+    "main.js": "/algocanvas/static/js/main.4f1739df.js",
     "index.html": "/algocanvas/index.html",
     "main.f450704f.css.map": "/algocanvas/static/css/main.f450704f.css.map",
-    "main.ff3d893f.js.map": "/algocanvas/static/js/main.ff3d893f.js.map"
+    "main.4f1739df.js.map": "/algocanvas/static/js/main.4f1739df.js.map"
   },
   "entrypoints": [
     "static/css/main.f450704f.css",
-    "static/js/main.ff3d893f.js"
+    "static/js/main.4f1739df.js"
   ]
 }
