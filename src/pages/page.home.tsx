@@ -2,16 +2,8 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Box from '../components/home/box';
 import Layout from '../components/layout/layout';
-import Search from '../components/home/search';
 import { boxes } from '../utils/box';
 import { useTheme } from '../context/themeContext';
-
-const HomeSearch = styled.div`
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 20px 0px;
-`;
 
 const HomeContent = styled.div`
     display: flex;
@@ -39,7 +31,7 @@ const NoSearch = styled.div<{ theme: string }>`
 
 const HomePage = () => {
     const [filteredBoxes, setFilteredBoxes] = useState(boxes);
-    const [query, setQuery] = useState('');
+    const [, setQuery] = useState('');
     const { theme } = useTheme();
 
     const home_onSearch = (query: string) => {
@@ -72,9 +64,6 @@ const HomePage = () => {
     
     return (
         <Layout subTitle=''>
-            <HomeSearch>
-                <Search onSearch={home_onSearch} query={query} setQuery={setQuery} />
-            </HomeSearch>
             <HomeContent>
                 <HomeBoxes>
                     {filteredBoxes.length > 0 ? (

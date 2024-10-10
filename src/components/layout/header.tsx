@@ -2,7 +2,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { useTheme } from '../../context/themeContext';
-import ToggleSwitch from '../common/toggleSwitch';
 
 const StyledHeader = styled.header<{ theme: string }>`
     display: flex;
@@ -44,13 +43,6 @@ const ColoredText = styled.div`
     }
 `;
 
-const ToggleContainer = styled.div`
-    position: absolute;
-    right: 3%;
-    display: flex;
-    align-items: center;
-`;
-
 const SubtitleWapper = styled.div`
     display: flex;
     padding: 4px 28px;
@@ -75,7 +67,7 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ subTitle }) => {
     const navigate = useNavigate();
-    const { theme, toggleTheme } = useTheme();
+    const { theme } = useTheme();
 
     const header_onClicked = () => {
         navigate('/');
@@ -106,10 +98,6 @@ const Header: React.FC<HeaderProps> = ({ subTitle }) => {
                 <ColoredText color="#70BAFF">A</ColoredText>
                 <ColoredText color="#70BAFF">S</ColoredText>
             </HeadTitle>
-
-            <ToggleContainer>
-                <ToggleSwitch onToggle={toggleTheme} />
-            </ToggleContainer>
         </StyledHeader>
     );
 };
